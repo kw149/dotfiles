@@ -1,1 +1,6 @@
-# Ansible Dotfiles for setup of Linux devices
+# Ansible Dotfiles
+
+
+For Linux devices
+
+Supports Ubuntu, Redhat Linux (Rocky)
