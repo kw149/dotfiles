@@ -1,0 +1,12 @@
+---
+
+- hosts: localhost
+  # for ansible pull we use local as no SSH remote connection is needed
+  connection: local
+  become: true
+
+  tasks:
+    - name: install htop
+      package:
+        name: htop
+
