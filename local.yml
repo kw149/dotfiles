@@ -16,6 +16,16 @@
           - bat
           - fontconfig
 
+
+    - name: install playbook requirements - for gnome configuration 
+      become: true
+      package:
+        name:
+          - python3-psutil
+          - dconf
+          - dbus-tools
+          - dbus-daemon
+
     - name: copy wallpaper file
       copy:
         src: files/ansible-wallpaper.png
