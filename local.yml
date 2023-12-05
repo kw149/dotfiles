@@ -23,8 +23,6 @@
         name:
           - python3-psutil
           - dconf-cli
-          - dbus-tools
-          - dbus-daemon
 
     - name: copy wallpaper file
       copy:
