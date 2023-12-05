@@ -22,7 +22,7 @@
       package:
         name:
           - python3-psutil
-          - dconf
+          - dconf-cli
           - dbus-tools
           - dbus-daemon
 
