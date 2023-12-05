@@ -4,42 +4,9 @@
   # for ansible pull we use local as no SSH remote connection is needed
   connection: local
   become: true
-
-  tasks:
-    - name: install packages
-      package:
-        name: 
-          - htop
-          - tmux
-          - neovim
-          - cmatrix
-          - bat
-          - fontconfig
+  roles:
+    - base
+    - workstations
 
 
-    - name: install playbook requirements - for gnome configuration 
-      become: true
-      package:
-        name:
-          - python3-psutil
-          - dconf-cli
-
-    - name: copy wallpaper file
-      copy:
-        src: files/ansible-wallpaper.png
-        dest: /usr/share/backgrounds/ansible-wallpaper.png
-        owner: root
-        group: root
-
-    - name: set wallpaper
-      become_user: parallels
-      dconf:
-        key: "/org/gnome/desktop/background/picture-uri"
-        value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
-
-    - name: set wallpaper position
-      become_user: parallels
-      dconf:
-        key: "/org/gnome/desktop/background/picture-options"
-        value: "'zoom'"
 
