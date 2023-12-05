@@ -1,9 +1,9 @@
 - name: install packages
-    package:
-      name:
-        - htop
-        - tmux
-        - neovim
-        - cmatrix
-        - bat
-        - fontconfig
+  package:
+    name:
+      - htop
+      - tmux
+      - neovim
+      - cmatrix
+      - bat
+      - fontconfig
