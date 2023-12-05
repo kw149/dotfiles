@@ -13,5 +13,24 @@
           - tmux
           - neovim
           - cmatrix
+          - bat
+          - exa
+          - fontconfig
 
+    - name copy wallpaper file
+      copy:
+        src: files/wallaper.png
+        dest: /usr/share/backrounds/ansible-wallpaper.png
+        owner: root
+        group: root
+
+    - name set wallpaper
+      dconf:
+        key: "/org/gome/desktop/background/picture.uri"
+        value: "'file:///usr/share/backgrouds/ansible-wallpaper.png'"
+
+    - name set wallpaper position
+      dconf:
+        key: "/org/gome/desktop/background/picture-options"
+        value: "'zoom'"
 
