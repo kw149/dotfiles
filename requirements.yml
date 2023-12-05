@@ -1,4 +1,6 @@
+---
 # From Ansible Galaxy
 #
 #
-- name: diodonfrost.p10k
+roles:
+  - name: diodonfrost.p10k
