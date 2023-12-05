@@ -6,6 +6,7 @@
   become: true
   roles:
     - base
+    - { role: diodonfrost.p10k }
     - workstations
 
 
