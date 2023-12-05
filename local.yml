@@ -19,7 +19,7 @@
     - name: copy wallpaper file
       copy:
         src: files/ansible-wallpaper.png
-        dest: /usr/share/backrounds/ansible-wallpaper.png
+        dest: /usr/share/backgrounds/ansible-wallpaper.png
         owner: root
         group: root
 
