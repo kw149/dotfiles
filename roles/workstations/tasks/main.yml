@@ -1,22 +1,22 @@
 - name: install playbook requirements - for gnome configuration
-    become: true
-    package:
-      name:
-        - python3-psutil
-        - dconf-cli
+  become: true
+  package:
+    name:
+      - python3-psutil
+      - dconf-cli
 
 - name: copy wallpaper file
-    copy:
-      src: files/ansible-wallpaper.png
-      dest: /usr/share/backgrounds/ansible-wallpaper.png
-      owner: root
-      group: root
+  copy:
+    src: files/ansible-wallpaper.png
+    dest: /usr/share/backgrounds/ansible-wallpaper.png
+    owner: root
+    group: root
 
 - name: set wallpaper
-      become_user: parallels
-      dconf:
-        key: "/org/gnome/desktop/background/picture-uri"
-        value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
+    become_user: parallels
+    dconf:
+      key: "/org/gnome/desktop/background/picture-uri"
+      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
 - name: set wallpaper position
     become_user: parallels
