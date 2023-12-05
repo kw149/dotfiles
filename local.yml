@@ -14,7 +14,6 @@
           - neovim
           - cmatrix
           - bat
-          - exa
           - fontconfig
 
     - name: copy wallpaper file
