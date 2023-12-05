@@ -1,10 +1,12 @@
 # Ansible Dotfiles
 
 
-For Linux devices
+Personal condfiguration for CLI Linux servers and Desktops
 
-Supports Ubuntu, Redhat Linux (Rocky)
+Work in progress !!!
 
-Packages Installed
+
+
+
 
 
