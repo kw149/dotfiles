@@ -4,6 +4,6 @@
     depth: "1"
     update: no
     version: "master"
-    dest: ~/powerlevel10k
+    dest: "{{ ansible_user_id }} + / ~/powerlevel10k"
 
 
