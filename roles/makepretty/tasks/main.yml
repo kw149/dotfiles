@@ -1,9 +1,9 @@
-- name: Git Checkout of Power10K for {{ ansible_user_id }}
+- name: Git Checkout of Power10K for {{ p10k_users }}
   ansible.builtin.git:
     repo: "{{ p10k_repository_url }}"
     depth: "1"
     update: no
     version: "master"
-    dest: "{{ ansible_user_id }} + / ~/powerlevel10k"
+    dest: "{{ p10k_users }} + / ~/powerlevel10k"
 
 

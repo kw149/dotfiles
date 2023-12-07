@@ -2,6 +2,5 @@
 p10k_repository_url: 'https://github.com/romkatv/powerlevel10k.git'
 
 p10k_users:
-  - "{{ ansible_user_id }}"
   - parallels
 
