@@ -1,6 +1,9 @@
 - name: Git Checkout of Power10K
   ansible.builtin.git:
-    repo: {{ p10k_repository_url }}
+    repo: "{{ p10k_repository_url }}"
+    depth: "1"
+    update: no
+    version: "master"
     dest: ~/powerlevel10k
 
 
