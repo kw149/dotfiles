@@ -1,4 +1,4 @@
-- name: Git Checkout of Power10K
+- name: Git Checkout of Power10K for {{ ansible_user_id }}
   ansible.builtin.git:
     repo: "{{ p10k_repository_url }}"
     depth: "1"
