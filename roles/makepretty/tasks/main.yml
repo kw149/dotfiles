@@ -7,4 +7,10 @@
     version: "master"
     dest: ~/powerlevel10k
 
+- name: Configure .zshrc file for Power10K
+  become_user: paralllels
+  ansible.builtin.lineinfile:
+    path: ~/.zshrc
+    line: "source ~/powerlevel10k/powerlevel10k.zsh-theme"
+    state: present
 
