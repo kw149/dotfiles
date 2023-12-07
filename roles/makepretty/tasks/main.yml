@@ -1,4 +1,4 @@
-- name Git Checkout of Power10K
+- name: Git Checkout of Power10K
   ansible.builtin.git:
     repo: "https://github.com/romkatv/powerlevel10k.git"
     dest: ~/powerlevel10k
