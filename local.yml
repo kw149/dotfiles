@@ -6,8 +6,7 @@
   become: true
   roles:
     - base
-    - makepretty
     - workstations
-
+    - makepretty
 
 

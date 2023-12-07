@@ -1,4 +1,5 @@
 - name: Git Checkout of Power10K for {{ p10k_users }}
+  become: false
   ansible.builtin.git:
     repo: "{{ p10k_repository_url }}"
     depth: "1"
