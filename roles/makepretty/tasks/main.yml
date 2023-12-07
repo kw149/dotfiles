@@ -1,10 +1,10 @@
 - name: Git Checkout of Power10K for {{ p10k_users }}
-  become: false
+  become_user: parallels
   ansible.builtin.git:
     repo: "{{ p10k_repository_url }}"
     depth: "1"
     update: no
     version: "master"
-    dest: /home/parallels/powerlevel10k
+    dest: ~/powerlevel10k
 
 
